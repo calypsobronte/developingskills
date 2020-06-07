@@ -1,0 +1,35 @@
+.Slog
+{
+    position:absolute;
+    left:180px;
+    top:5%;
+    color:#1B9678 ;
+    font-size:50px;
+    text-align: right;
+    font-family: Georgia;
+    font-weight:bold;
+}
+
+.Developing
+{
+    position:absolute;
+    left:180px;
+    top:3%;
+    color:#91E79A;
+    font-size:20px;
+    text-align: right;
+    font-family: Georgia;
+}
+
+.log
+{
+    position:absolute;
+    left:50px;
+    top:3%;
+    
+}
+
+body
+{
+    background-color:#FDFDFD;
+}
