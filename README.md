@@ -24,7 +24,7 @@ _“Technology is the new fire, it can extend the lives of some and transform th
 * CSS
 * JAVASCRIPT
 * HTML
-* VIEW     
+* VUE JS     
 
 ## <p align="center"> MOCKUP
 
