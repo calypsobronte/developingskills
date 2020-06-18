@@ -135,69 +135,6 @@ button:focus.Home {
     outline: 0px;
 }
 
-.div_1 {
-    background-color: #91E79A;
-    position: absolute;
-    height: 500px;
-    bottom:-110%;
-    top:100%;
-    width:1300px;
-}
-
-.Lina {
-    color:white;
-}
-
-.github_lina_
-{
-    position:absolute;
-    left:780px;
-    top:39%;
-}
-
-.instagram_lina_
-{
-    position:absolute;
-    left:815px;
-    top:39%;
-}
-
-.tweet_lina_
-{
-    position:absolute;
-    left:850px;
-    top:39%;
-}
-
-.Julian {
-    color:white;
-}
-
-.github_Julian
-{
-    position:absolute;
-    left:780px;
-    top:56%;
-}
-
-.linkedin_Julian
-{
-    position:absolute;
-    left:815px;
-    top:56%;
-}
-
-.tweet_Julian
-{
-    position:absolute;
-    left:850px;
-    top:56%;
-}
-
-.inspires {
-    color:white;
-}
-
 .efect_1 {
     position:absolute;
     left:55px;
@@ -217,8 +154,3 @@ button:focus.Home {
     top:80%
 }
 
-.github_repository {
-    position:absolute;
-    left:840px;
-    top:73%
-}
