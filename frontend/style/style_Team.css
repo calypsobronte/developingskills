@@ -1,5 +1,6 @@
 .Home
 {
+    cursor:pointer;
     position:absolute;
     left:600px;
     top:5%;
@@ -12,6 +13,7 @@
 
 .Start
 {
+    cursor:pointer;
     position:absolute;
     left:750px;
     top:5%;
@@ -24,6 +26,7 @@
 
 .Intranet
 {
+    cursor:pointer;
     position:absolute;
     left:900px;
     top:5%;
@@ -36,6 +39,7 @@
 
 .Team
 {
+    cursor:pointer;
     position:absolute;
     left:1050px;
     top:5%;
@@ -48,6 +52,7 @@
 
 .Read_More
 {
+    cursor:pointer;
     position:absolute;
     bottom:150px;
     right:150px;
@@ -119,6 +124,27 @@ button:focus {
     font-family: Bungee;
 }
 
+.github_lina
+{
+    position:absolute;
+    left:650px;
+    top:55%;
+}
+
+.instagram_lina
+{
+    position:absolute;
+    left:695px;
+    top:55%;
+}
+
+.tweet_lina
+{
+    position:absolute;
+    left:745px;
+    top:55%;
+}
+
 .Julian
 {
     position:absolute;
@@ -128,6 +154,27 @@ button:focus {
     font-size:30px;
     text-align: right;
     font-family: Bungee;
+}
+
+.github_Julian
+{
+    position:absolute;
+    left:650px;
+    top:88%;
+}
+
+.linkedin_Julian
+{
+    position:absolute;
+    left:695px;
+    top:88%;
+}
+
+.tweet_Julian
+{
+    position:absolute;
+    left:745px;
+    top:88%;
 }
 
 .p1

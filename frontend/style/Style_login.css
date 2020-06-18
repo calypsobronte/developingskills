@@ -100,6 +100,7 @@ input[type=checkbox]
  
 .Start
 {
+    cursor:pointer;
     float:right;
     margin-right:20px;
     margin-top:20px;
