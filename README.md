@@ -1,4 +1,4 @@
-![Start with me](frontend/src/Images/logo_readme.png)
+![Start with me.](frontend/src/Images/logo_readme.png)
 
 # <p align="center"> DEVELOPING SKILLS</p>
 
