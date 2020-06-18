@@ -1,5 +1,7 @@
 .Home
 {
+    
+    cursor:pointer;
     position:absolute;
     left:600px;
     top:5%;
@@ -12,6 +14,7 @@
 
 .Start
 {
+    cursor:pointer;
     position:absolute;
     left:750px;
     top:5%;
@@ -24,6 +27,7 @@
 
 .Intranet
 {
+    cursor:pointer;
     position:absolute;
     left:900px;
     top:5%;
@@ -36,6 +40,7 @@
 
 .Team
 {
+    cursor:pointer;
     position:absolute;
     left:1050px;
     top:5%;
@@ -48,6 +53,7 @@
 
 .Read_More
 {
+    cursor:pointer;
     position:absolute;
     bottom:150px;
     right:150px;
@@ -58,6 +64,27 @@
     border-radius:100px;
     border:none;
     font-size:25px;
+}
+
+.github_lina
+{
+    position:absolute;
+    left:950px;
+    top:85%;
+}
+
+.instagram_lina
+{
+    position:absolute;
+    left:1000px;
+    top:85%;
+}
+
+.tweet_lina
+{
+    position:absolute;
+    left:1050px;
+    top:85%;
 }
 
 .Slog
@@ -85,8 +112,8 @@
 .img
 {
     position:absolute;
-    left:150px;
-    top:45%;
+    left:180px;
+    top:30%;
 }
 
 .log
@@ -108,3 +135,90 @@ button:focus.Home {
     outline: 0px;
 }
 
+.div_1 {
+    background-color: #91E79A;
+    position: absolute;
+    height: 500px;
+    bottom:-110%;
+    top:100%;
+    width:1300px;
+}
+
+.Lina {
+    color:white;
+}
+
+.github_lina_
+{
+    position:absolute;
+    left:780px;
+    top:39%;
+}
+
+.instagram_lina_
+{
+    position:absolute;
+    left:815px;
+    top:39%;
+}
+
+.tweet_lina_
+{
+    position:absolute;
+    left:850px;
+    top:39%;
+}
+
+.Julian {
+    color:white;
+}
+
+.github_Julian
+{
+    position:absolute;
+    left:780px;
+    top:56%;
+}
+
+.linkedin_Julian
+{
+    position:absolute;
+    left:815px;
+    top:56%;
+}
+
+.tweet_Julian
+{
+    position:absolute;
+    left:850px;
+    top:56%;
+}
+
+.inspires {
+    color:white;
+}
+
+.efect_1 {
+    position:absolute;
+    left:55px;
+    top:20%
+}
+
+
+.efect_2 {
+    position:absolute;
+    left:865px;
+    top:70%
+}
+
+.efect {
+    position:absolute;
+    left:0px;
+    top:80%
+}
+
+.github_repository {
+    position:absolute;
+    left:840px;
+    top:73%
+}
