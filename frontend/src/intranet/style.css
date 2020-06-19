@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #1B9678;
+    letter-spacing: 2px;
+    font-size: 55.9616px;
+    line-height: 67px;
+}
+
+.container {
+    background: #91E79A;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+
+.screen-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 20px 70px;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.quiz-screen-step {
+    color: #6B71E4;
+}
+
+.quiz-image-wrapper {
+    max-width: 100%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.quiz-image-wrapper:before {
+    content: '';
+    
+    background-size: contain;
+    height: 100%;
+    left: -65px;
+    right: -65px;
+    display: block;
+    position: absolute;
+}
+
+.quiz-image {
+    max-width: 100%;
+    /* width: 300px; */
+    position: relative;
+    z-index: 1;
+}
+
+.quiz-timer {
+    width: 550px;
+    max-width: 100%;
+    height: 20px;
+    background: #000501;
+    border-radius: 3em;
+    margin-bottom: 50px;
+    padding: 5px 6px;
+}
+
+.quiz-timer span {
+    display: inline-block;
+    background: linear-gradient(90deg, #fff, #ACBD00);
+    height: 10px;
+    vertical-align: top;
+    border-radius: 3em;
+
+    animation: progressbar-countdown;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+}
+
+@keyframes progressbar-countdown {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+.quiz-question {
+    margin-bottom: 50px;
+}
+
+.how-to-play-screen .default-button {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    width: 600px;
+    max-width: 100%;
+}
+
+.button-outer {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.default-button {
+    color: #ffffff;
+    font-family: 'Bungee';
+    font-weight: bold;
+    font-size: medium;
+    background-color: #1B9678;
+    width: 12em;
+    height: 4em;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border-radius: 0.9em;
+    box-shadow: 0 0.6em 0.9em rgba(0, 0, 0, 0.6);
+    user-select: none; /* Thanks to @SplittyDev */
+    transform: translateY(-0.5em);
+    transition:
+      background-color 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+      box-shadow 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+      transform 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.default-button:hover {
+    background: #ffffff;
+    color: #000501;
+}
+
+.default-button[disabled] {
+    background-color: #7501fa;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(0em) scale(0.9);
+    transition:
+      background-color 150ms ease-out,
+      box-shadow 150ms ease-out,
+      transform 150ms ease-out;
+}
+
+.default-button[disabled]:hover {
+    background: transparent;
+}
+
+.default-button.correct {
+    cursor: default;
+    background: #18fa03;
+    color: #010501;
+    border-color: #010501;
+}
+
+.default-button.correct::before {
+    content: '';
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    background: url('log.png') center no-repeat; /* respuesta escogida buena */
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.default-button.correct:hover {
+    background: #ACBD00;
+    color: #010501;
+    border-color: #010501;
+}
+
+.default-button.wrong {
+    cursor: default;
+    background: #F6484C;
+    color: #010501;
+    border-color: #010501;
+}
+
+.default-button.wrong::before {
+    content: '';
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    background: url('log.png') center no-repeat; /* respuesta escogida mala */
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.default-button.wrong:hover {
+    background: #F6484C;
+    color: #010501;
+    border-color: #010501;
+}
+
+.title {
+    font-size: 32px;
+    margin-top: 100px;
+}
+
+.text {
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #000501;
+    text-transform: none;
+}
+
+.quiz-logo {
+    position: absolute;
+    bottom: 20px;
+}
+
+.quiz-corner-logo {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 100px;
+}
+
+.close-button {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Bungee';
+    font-size: 34px;
+    outline: none;
+    text-transform: none;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+.close-button:hover {
+    color: #eee;
+}
+
+.score-name {
+    margin: 0 0 28px;
+    font-size: 46px;
+}
+
+.score {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: none;
+    line-height: 24px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 700px) {
+    .screen-section {
+        padding: 50px;
+    }
+
+    .button-outer {
+        flex-basis: 50%;
+    }
+}
+
+
+
+/* ================== others =================================== */
+.btn-splatter {
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: #4487ed;
+    width: 12em;
+    height: 4em;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border-radius: 0.9em;
+    box-shadow: 0 0.6em 0.9em rgba(0, 0, 0, 0.6);
+    user-select: none; /* Thanks to @SplittyDev */
+    transform: translateY(-0.5em);
+    transition:
+      background-color 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+      box-shadow 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+      transform 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  }
+  
+  .btn-splatter:focus {
+    outline: 0;
+  }
+  
+  .btn-splatter:active {
+    background-color: #2770df;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(0em) scale(0.9);
+    transition:
+      background-color 150ms ease-out,
+      box-shadow 150ms ease-out,
+      transform 150ms ease-out;
+  }
+  
+  .splatter {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .splatter-round, .splatter-ring, .splatter-star {
+    position: absolute;
+  }
+  
+  .splatter-round {
+    width: 1em;
+    height: 1em;
+    background-color: #1da5ff;
+    border-radius: 50%;
+  }
+  
+  .splatter-ring {
+    width: 0.8em;
+    height: 0.8em;
+    border: solid 0.35em #0099e6;
+    border-radius: 50%;
+  }
+  
+  .splatter-star {
+    width: 1.8em;
+    height: 1.8em;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="%23006dd0" viewBox="0 0 24 24"%3E%3Cpath%20d%3D%22M12%2C17.27L18.18%2C21L16.54%2C13.97L22%2C9.24L14.81%2C8.62L12%2C2L9.19%2C8.62L2%2C9.24L7.45%2C13.97L5.82%2C21L12%2C17.27Z%22%3E%3C%2Fpath%3E%3C/svg%3E');
+  }
+  
