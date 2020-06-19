@@ -44,9 +44,9 @@
             quizScreen.classList.remove('hidden');
 
             questions = [
-                { image: '001', answers: ['amarillo', 'azul', 'rojo', 'verde'], correct: 'amarillo' },
-                { image: '002', answers: ['amarillo', 'azul', 'rojo', 'verde'], correct: 'rojo' },
-                { image: '003', answers: ['amarillo', 'azul', 'rojo', 'verde'], correct: 'verde' },
+                { image: '001', answers: ['Yellow', 'Blue', 'Red', 'Green'], correct: 'Yellow' },
+                { image: '002', answers: ['Yellow', 'Blue', 'Red', 'Green'], correct: 'Red' },
+                { image: '003', answers: ['Yellow', 'Blue', 'Red', 'Green'], correct: 'Green' },
             ];
             let questionCount = document.getElementById('question-count');
             questionCount.innerHTML = questionLength.toString();
@@ -76,7 +76,7 @@
                 guess(null);
             }, 10000);
 
-            setQuizText('');
+            setQuizText('What color is it?');
 
             let imageElement = document.getElementById('question-image');
             imageElement.src = questions[questionIndex].image + '.jpg';
