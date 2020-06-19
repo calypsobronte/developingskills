@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVELOPING SKILLS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="screen-section main-screen">
+                <div class="quiz-image-wrapper">
+                    <img class="quiz-image" src="log.png" width="100px" height="100px">
+                </div>
+                <h1>Dev Skills</h1>
+                <div class="button-container">
+                    <div class="button-outer">
+                        <button class="default-button" id="start">Start</button>
+                    </div>
+                    <div class="button-outer">
+                        <button class="default-button" id="how-to">How to play?</button>
+                    </div>
+                </div>
+                <div class="quiz-logo">
+                    <img src="log.png" alt=" logo" width="20" height="20">
+                </div>
+            </div>
+
+            <div class="screen-section how-to-play-screen hidden">
+                <img class="quiz-corner-logo" src="log.png" height="50px" width="50px">
+                <button type="button" id="close-how-to" class="close-button">X</button>
+                <h2 class="title">Instructions for playing</h2>
+                <p class="text">Select the right answer to the questions that make you Developer Skill and let's learn together</p>
+
+                <p class="text">To start playing the Wapuu trivia game, first, tune to see the coolest Wapuus of all the
+                    WordCamps. When you are ready, click Start and choose the correct answer from the four given
+                    options.</p>
+
+                <p class="text">To start playing you must be ready in which we have four possible answers..</p>
+
+                <p class="text">every time you select the right answer you get a point.</p>
+
+                <p class="text">When you finish the game it will show you how far you have come in your learning
+                </p>
+                <button class="default-button" id="start2">Start playing</button>
+                <div class="quiz-logo">
+                    <img src="log.png" alt=" logo" width="20" height="20">
+                </div>
+            </div>
+
+            <div class="screen-section quiz-screen hidden">
+                <div class="quiz-screen-step">
+                    <span id="question-index"></span> / <span id="question-count"></span>
+                </div>
+                <div class="quiz-image-wrapper">
+                    <img class="quiz-image" id="question-image" src="log.png" height="200px" width="200px">
+                </div>
+                <div class="quiz-timer" id="progress-bar"></div>
+                <div class="quiz-question" id="quiz-text"></div>
+                <div class="button-container" id="answers-container">
+                    <div class="button-outer">
+                        <button id="answer0" class="default-button"></button>
+                    </div>
+                    <div class="button-outer">
+                        <button id="answer1" class="default-button"></button>
+                    </div>
+                    <div class="button-outer">
+                        <button id="answer2" class="default-button"></button>
+                    </div>
+                    <div class="button-outer">
+                        <button id="answer3" class="default-button"></button>
+                    </div>
+                </div>
+                <div class="quiz-logo">
+                    <img src="log.png" alt=" logo" width="20" height="20">
+                </div>
+            </div>
+
+            <div class="screen-section result-screen hidden">
+                <div class="quiz-image-wrapper">
+                    <img class="quiz-image" src="log.png" height="50px" width="50px">
+                </div>
+                <p class="score">
+                    <span id="score"></span> out of <span id="score-total"></span>
+                </p>
+                <h1 id="score-name" class="score-name">Dev Skill</h1>
+                <span class="description">
+                    <p>Let's keep learning, give it</p>
+                </span>
+                <button class="default-button" id="start3">Play again</button>
+
+                <div class="quiz-logo">
+                    <img src="log.png" alt=" logo" width="20" height="20">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
