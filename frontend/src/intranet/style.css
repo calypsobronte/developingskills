@@ -52,7 +52,7 @@ body {
 
 .quiz-image-wrapper:before {
     content: '';
-    
+
     background-size: contain;
     height: 100%;
     left: -65px;
@@ -72,18 +72,16 @@ body {
     width: 550px;
     max-width: 100%;
     height: 20px;
-    background: #000501;
-    border-radius: 3em;
+    background: #4b574d;
     margin-bottom: 50px;
     padding: 5px 6px;
 }
 
 .quiz-timer span {
     display: inline-block;
-    background: linear-gradient(90deg, #fff, #ACBD00);
+    background: linear-gradient(90deg, rgb(119, 117, 117), #10ff74);
     height: 10px;
     vertical-align: top;
-    border-radius: 3em;
 
     animation: progressbar-countdown;
     animation-duration: 10s;
@@ -142,12 +140,13 @@ body {
     position: relative;
     border-radius: 0.9em;
     box-shadow: 0 0.6em 0.9em rgba(0, 0, 0, 0.6);
-    user-select: none; /* Thanks to @SplittyDev */
+    user-select: none;
+    /* Thanks to @SplittyDev */
     transform: translateY(-0.5em);
     transition:
-      background-color 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
-      box-shadow 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
-      transform 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        background-color 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+        box-shadow 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+        transform 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .default-button:hover {
@@ -160,9 +159,9 @@ body {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
     transform: translateY(0em) scale(0.9);
     transition:
-      background-color 150ms ease-out,
-      box-shadow 150ms ease-out,
-      transform 150ms ease-out;
+        background-color 150ms ease-out,
+        box-shadow 150ms ease-out,
+        transform 150ms ease-out;
 }
 
 .default-button[disabled]:hover {
@@ -181,7 +180,8 @@ body {
     height: 18px;
     width: 18px;
     display: inline-block;
-    background: url('log.png') center no-repeat; /* respuesta escogida buena */
+    background: url('log.png') center no-repeat;
+    /* respuesta escogida buena */
     background-size: contain;
     vertical-align: middle;
     margin-right: 5px;
@@ -206,7 +206,8 @@ body {
     height: 18px;
     width: 18px;
     display: inline-block;
-    background: url('log.png') center no-repeat; /* respuesta escogida mala */
+    background: url('log.png') center no-repeat;
+    /* respuesta escogida mala */
     background-size: contain;
     vertical-align: middle;
     margin-right: 5px;
@@ -312,55 +313,57 @@ body {
     position: relative;
     border-radius: 0.9em;
     box-shadow: 0 0.6em 0.9em rgba(0, 0, 0, 0.6);
-    user-select: none; /* Thanks to @SplittyDev */
+    user-select: none;
+    /* Thanks to @SplittyDev */
     transform: translateY(-0.5em);
     transition:
-      background-color 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
-      box-shadow 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
-      transform 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  }
-  
-  .btn-splatter:focus {
+        background-color 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+        box-shadow 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+        transform 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.btn-splatter:focus {
     outline: 0;
-  }
-  
-  .btn-splatter:active {
+}
+
+.btn-splatter:active {
     background-color: #2770df;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
     transform: translateY(0em) scale(0.9);
     transition:
-      background-color 150ms ease-out,
-      box-shadow 150ms ease-out,
-      transform 150ms ease-out;
-  }
-  
-  .splatter {
+        background-color 150ms ease-out,
+        box-shadow 150ms ease-out,
+        transform 150ms ease-out;
+}
+
+.splatter {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  .splatter-round, .splatter-ring, .splatter-star {
+}
+
+.splatter-round,
+.splatter-ring,
+.splatter-star {
     position: absolute;
-  }
-  
-  .splatter-round {
+}
+
+.splatter-round {
     width: 1em;
     height: 1em;
     background-color: #1da5ff;
     border-radius: 50%;
-  }
-  
-  .splatter-ring {
+}
+
+.splatter-ring {
     width: 0.8em;
     height: 0.8em;
     border: solid 0.35em #0099e6;
     border-radius: 50%;
-  }
-  
-  .splatter-star {
+}
+
+.splatter-star {
     width: 1.8em;
     height: 1.8em;
     background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="%23006dd0" viewBox="0 0 24 24"%3E%3Cpath%20d%3D%22M12%2C17.27L18.18%2C21L16.54%2C13.97L22%2C9.24L14.81%2C8.62L12%2C2L9.19%2C8.62L2%2C9.24L7.45%2C13.97L5.82%2C21L12%2C17.27Z%22%3E%3C%2Fpath%3E%3C/svg%3E');
-  }
-  
+}
